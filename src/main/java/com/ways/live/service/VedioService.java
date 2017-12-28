@@ -5,12 +5,9 @@ import com.shentop.ext.dto.SearchPagingParams;
 import com.ways.live.data.VedioRepository;
 import com.ways.live.model.Vedio;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class VedioService {
@@ -73,4 +70,16 @@ public class VedioService {
         return (List<Vedio>) vedioRepository.getTopVideoBySortType(sortType);
     }
 
+    /**
+     * 根据uri获取video
+     * @param uri
+     * @return
+     */
+    public Vedio getVedioByVedioUrl(String uri) {
+        return vedioRepository.getVedioByVedioUrl(uri);
+    }
+
+    public void UpdateVedio(Vedio vedio){
+        vedioRepository.save(vedio);
+    }
 }

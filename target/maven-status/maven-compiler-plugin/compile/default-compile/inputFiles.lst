@@ -1,0 +1,15 @@
+D:\livevedio\src\main\java\com\ways\live\SwaggerConf.java
+D:\livevedio\src\main\java\com\ways\live\SbootdataApplication.java
+D:\livevedio\src\main\java\com\ways\live\common\Constants.java
+D:\livevedio\src\main\java\com\ways\live\data\UserRepository.java
+D:\livevedio\src\main\java\com\ways\live\model\User.java
+D:\livevedio\src\main\java\com\ways\live\data\VedioRepository.java
+D:\livevedio\src\main\java\com\ways\live\dto\UserModel.java
+D:\livevedio\src\main\java\com\ways\live\common\VedioSourceConfigure.java
+D:\livevedio\src\main\java\com\ways\live\model\Vedio.java
+D:\livevedio\src\main\java\com\ways\live\controller\VedioRestController.java
+D:\livevedio\src\main\java\com\ways\live\common\AjaxResponse.java
+D:\livevedio\src\main\java\com\ways\live\service\UserService.java
+D:\livevedio\src\main\java\com\ways\live\controller\LoginRestController.java
+D:\livevedio\src\main\java\com\ways\live\controller\LoginController.java
+D:\livevedio\src\main\java\com\ways\live\service\VedioService.java
