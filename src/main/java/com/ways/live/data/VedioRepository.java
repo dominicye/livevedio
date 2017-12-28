@@ -27,5 +27,6 @@ public interface VedioRepository extends CrudRepository<Vedio, Integer> {
     @Query(value = "select COUNT(id) from vedio where vedio_sort_type=?1", nativeQuery = true)
     long getCount(String type);
 
-
+    @Query(value = "select * from vedio where vedio_url=?1", nativeQuery = true)
+    Vedio getVedioByVedioUrl(String uri);
 }
