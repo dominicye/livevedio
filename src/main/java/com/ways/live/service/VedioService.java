@@ -73,4 +73,9 @@ public class VedioService {
         return (List<Vedio>) vedioRepository.getTopVideoBySortType(sortType);
     }
 
+    public Vedio getVedioById(int id)
+    {
+        return vedioRepository.findOne(id);
+    }
+
 }

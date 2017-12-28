@@ -1,0 +1,170 @@
+
+body,html{
+	background: #F3F2F2;
+}
+.header {
+	width: 100%;
+	height: 1.173333rem;
+	background: #5187EB;
+}
+
+.header span {
+	display: none;
+	font-size: 0.373333rem;
+	color: #fff;
+	float: right;
+	margin-top: 0.4rem;
+	margin-right: 0.293333rem;
+}
+
+.header .headerActive {
+	display: block;
+	color: #fff;
+}
+
+header {
+	width: 100%;
+	/*height: 1.066666rem;*/
+	margin-bottom: 0.106666rem;
+}
+
+header ul {
+	width: auto;
+	height: 1.066666rem;
+	background: #fff;
+	/*padding-top: 0.4rem;*/
+}	
+
+header ul li {
+	/*margin-top: 0.4rem;*/
+	float: left;
+	font-size: 0.373333rem;
+	color: #5187EB;
+	padding: 0 0.333333rem;
+	line-height: 1.066666rem;
+}
+header ul li a{
+	display: block;
+	color: #444;
+}
+.liActive{
+	border-bottom: solid 0.053333rem #5187EB;
+	color: #5187EB;
+}
+.hide{
+	display: none !important;
+	
+}
+
+.show{
+	display: block !important;
+}
+
+
+
+
+
+
+
+.nav{
+	width: 100%;
+	height: 2.666666rem;
+	display: flex;
+	align-items: center;
+	padding: 0.293333rem;
+	box-sizing: border-box;
+	margin-top: 0.4rem;
+	background: #fff;
+}
+
+.nav img{
+	width: 2rem;
+	height: 2rem;
+}
+.nav div:nth-of-type(1){
+	width: 5.733333rem;
+	padding-left: 0.186666rem;
+	box-sizing: border-box;
+}
+.nav div:nth-of-type(1)>p:nth-of-type(1){
+	font-size: 0.373333rem;
+	color: #444;
+}
+
+.nav div:nth-of-type(1)>p:nth-of-type(2){
+	font-size: 0.333333rem;
+	color: #999;
+}
+.nav div:nth-of-type(2){
+	color: #5187EB;
+	font-size: 0.32rem;
+}
+
+
+
+
+
+
+body>ul>li>span{
+	display: inline-block;
+	width: 0.586666rem;
+	height: 0.586666rem;
+	margin-right: 0.533333rem;
+	position: absolute;
+	left: 0.293333rem;
+	top: 0;
+	bottom: 0;
+	background: red;
+	margin: auto;
+}
+body>ul>li:nth-of-type(1)>span{
+	background: url(../img/icon_message.png) no-repeat;
+	background-size: 100%;
+}
+body>ul>li:nth-of-type(2)>span{
+	background: url(../img/about.png) no-repeat;
+	background-size: 100%;
+}
+body>ul>li:nth-of-type(3)>span{
+	background: url(../img/about.png) no-repeat;
+	background-size: 100%;
+}
+body>ul>li:nth-of-type(4)>span{
+	background: url(../img/shop.png) no-repeat;
+	background-size: 100%;
+}
+body>ul>li:nth-of-type(5)>span{
+	background: url(../img/shoucang.png) no-repeat;
+	background-size: 100%;
+}
+body>ul{
+	margin-top: 0.293333rem;
+	width: 100%;
+	height: auto;
+}
+body>ul>li{
+	background: #fff;
+	height: 1.066666rem;
+	border-bottom: solid #DFDFDF 1px;
+	line-height: 1.066666rem;
+	position: relative;
+	text-indent: 1.4rem;
+	color: #444;
+	font-size: 0.32rem;
+	line-height: 1.066666rem
+	/*padding-top:0.266666rem ;*/
+}
+body>ul>li:first-of-type{
+	margin-bottom: 0.293333rem;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+

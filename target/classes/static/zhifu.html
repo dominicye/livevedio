@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="Keywords" content="" />
+		<!--各种网页描述关键字-->
+		<meta name="description" content="" />
+		<!--各种网页详细的描述-->
+		<meta name="Robots" contect="all">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Widow-target" Content="_top">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/init.css" />
+		<link rel="stylesheet" type="text/css" href="css/zhifu.css"/>
+	</head>
+	<body>
+		<div class="wall">
+			<div class="header">
+				<img src="img/titter.png"/>
+				<section>
+					<p>空空空空空大师</p>
+					<p>开通会员免费看大片</p>
+				</section>
+			</div>
+			<div class="fukuan">
+				<p>黄金vip会员</p>
+				<ul>
+					<li>
+						<span id="" class="hide">
+							推荐
+						</span>
+						<p>1个月</p>
+						<p>$18</p>
+						<p>￥25</p>
+					</li>
+					<li>
+						<span id="" class="hide">
+							推荐
+						</span>
+						<p>1个月</p>
+						<p>$18</p>
+						<p>￥150</p>
+					</li>
+					<li>
+						<span id=""  class="hide">
+							推荐
+						</span>
+						<p>1个月</p>
+						<p>$18</p>
+						<p>￥300</p>
+					</li>
+				</ul>
+				<p class="fukuanlast clearfix">
+					<span id="select" class="selectactive">
+						
+					</span>
+						到期后自动续费，可随时取消
+				</p>
+			</div>
+			<ul class="zhifu">
+				<li>
+					<span id="">
+						
+					</span>
+					visa支付
+					<span id="" class="">
+						
+					</span>
+				</li>
+				<li>
+					<span id="">
+						
+					</span>
+					master card支付
+					<span id="" class="">
+						
+					</span>
+				</li>
+				<li>
+					<span id="">
+						
+					</span>
+					ways pay支付
+					<span id="" class="active">
+						
+					</span>
+				</li>
+			</ul>
+			<div class="footer">
+				<p>
+					<span>总计：18</span>
+					<span>|</span>
+					<span>已优惠￥7元</span>
+				</p>
+				<p class="ok">确认支付</p>
+			</div>
+		</div>
+	</body>
+	<script src="./js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+window.alert = function(txt) {
+	$("<span class='tanchu'>" + txt + "<span/>").appendTo($("body"))
+	$(".tanchu").css({
+		"width": "80%",
+		//		"width": "auto",
+		"height": "1.3rem",
+		"font-size": "0.54rem",
+		"color": "#000",
+		"line-height": "1.3rem",
+		"border-radius": "1rem",
+		"position": "absolute",
+//		"top": "0",
+		//	"bottom": "0",
+		"margin": "0",
+		"top": "25%",
+		"left": "0",
+		"right": "0",
+		"margin": "auto",
+		"text-align":"center",
+		"background":"#FFD306"
+	}).fadeOut(3000)
+}
+		$("#select").on("click",function(){
+			$(this).toggleClass("selectactive")
+		})
+		$(".ok").on("click",function(){
+			var id=parseQueryString(url).id;
+			if(id==true){
+				alert('充值成功！')
+				history.back()
+			}else{
+				window.location.href="xinxi.html"
+			}
+			
+			
+//			window.location.href=""
+//			history.go(-2)
+		})
+		$(".zhifu li span:nth-of-type(2)").on("click",function(){
+			$(".zhifu li span:nth-of-type(2)").removeClass("active")
+			$(this).addClass("active")
+		})
+		$(".fukuan ul li").on("click",function(){
+			$(".fukuan li").removeClass("activeLi")
+			$(this).addClass("activeLi")
+		})
+		
+	</script>
+</html>

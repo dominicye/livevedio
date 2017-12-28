@@ -80,4 +80,15 @@ public class VedioRestController {
         return vedioService.getTopVideoBySortType(sortName);
     }
 
+    @RequestMapping(value = "/getVideoById" , method = RequestMethod.GET)
+    @ApiOperation(value="根据id获取视频")
+    public Vedio getVedioById(@RequestParam int id, HttpServletResponse response)
+    {
+        response.setHeader("Access-Control-Allow-Origin","*");
+        response.setHeader("Access-Control-Allow-Methods","POST");
+        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept");
+
+        return vedioService.getVedioById(id);
+    }
+
 }

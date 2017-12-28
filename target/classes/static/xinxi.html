@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"  name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="Keywords" content="" />   <!--各种网页描述关键字-->
+		<meta name="description" content="" />  <!--各种网页详细的描述-->
+		<meta name="Robots" contect="all">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">  <!--清缓存-->
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Widow-target" Content="_top">
+		<title></title>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/init.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xinxi.css"/>
+	</head>
+	
+	<body>
+		
+		<div class="wall">
+			
+			<section>
+				<p>
+					<span id="">
+					</span>
+					信息录入
+					
+				</p>
+				<p>
+					<span id="">
+						2017-06-06
+					</span>
+					<span id="">
+						18:16:15
+					</span>
+				</p>
+			</section>
+		
+			<section>
+				<ul>
+					<li>昵称<span></span>:<input type="text" name="" id="" value="" /></li>
+					<li>姓名<span>*</span>:<input type="text" name="" id="" value="" /></li>
+					<li>身份认证<span>*</span>:<input type="number" name="" id="" value="" /></li>
+					<li>出生年月<span>*</span>:<input type="date" name="" id="" value="2017/12/12" /></li>
+					<li>房产信息<span>*</span>:<input type="text" name="" id="" value="" /></li>
+					<li>职业信息<span>*</span>:<input type="text" name="" id="" value="" /></li>
+					<li>第一联系人<span>*</span>:<input type="text" name="" id="" value="" /></li>
+				</ul>
+				<input type="button" id="btn" value="提交" />
+				
+				
+			</section>
+		</div>
+		
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		opener.location.reload();
+		onclick="self.location=document.referrer;"
+	</script>
+	<script type="text/javascript">
+		$("#btn").on("click",function(){
+			if(true){
+				history.go(-2)
+			}else{
+				alert("请重新提交")
+			}
+		})
+	</script>
+	
+</html>
+	
+	
