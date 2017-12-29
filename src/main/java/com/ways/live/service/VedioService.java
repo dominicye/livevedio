@@ -30,15 +30,9 @@ public class VedioService {
         return  result;
     }
 
-    public PagingResult<Vedio> getTvSerialByNameAndPageNum(String name, int pageNum, int pageSize)
+    public List<Vedio> getTvSerialByName(String name)
     {
-        SearchPagingParams params = buildPagePara(pageNum, pageSize);
-        PagingResult<Vedio> result = new PagingResult<Vedio>();
-
-        result.setList(vedioRepository.getTvSerialByName(name,params.getOffset(),params.getPageSize()));
-        result.setTotal(vedioRepository.getTVSerialCount(name));
-
-        return  result;
+        return vedioRepository.getTvSerialByName(name);
     }
 
     private SearchPagingParams buildPagePara(int pageNum, int pageSize)
@@ -90,4 +84,13 @@ public class VedioService {
         vedioRepository.save(vedio);
     }
 
+    public List<Vedio> getAllTVs()
+    {
+        return vedioRepository.getAllTvs();
+    }
+
+    public List getSpecificTvById(int id)
+    {
+        return vedioRepository.getSpecificTvById(id);
+    }
 }

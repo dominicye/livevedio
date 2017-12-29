@@ -24,12 +24,16 @@ public class ClickTimeFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
         String uri = httpServletRequest.getRequestURI();
         uri=URLDecoder.decode(uri,"UTF-8").substring(1);
-        Vedio vedio = vedioService.getVedioByVedioUrl(uri);
-        if (vedio != null) {
-            int clickTime = vedio.getClickTime();
-            vedio.setClickTime(++clickTime);
-            vedioService.UpdateVedio(vedio);
+        if (uri.contains("waysVedio/moive"))
+        {
+            Vedio vedio = vedioService.getVedioByVedioUrl(uri);
+            if (vedio != null) {
+                int clickTime = vedio.getClickTime();
+                vedio.setClickTime(++clickTime);
+                vedioService.UpdateVedio(vedio);
+            }
         }
+
         filterChain.doFilter(httpServletRequest,httpServletResponse);
     }
 
